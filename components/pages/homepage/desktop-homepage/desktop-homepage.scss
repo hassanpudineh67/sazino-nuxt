@@ -1,0 +1,102 @@
+.home {
+      .intro {
+            @include flexbox($justifyContent: space-around, $alignItems: center);
+            //background: url("~@/assets/pattern.png") #fff;
+            background-size: 400px;
+            //padding: 30px;
+
+            .intro-pic {
+                  position: relative;
+                  top: 80px;
+                  width: 530px;
+                  background: #fff;
+                  border-radius: 4px;
+                  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            }
+
+            .sazino-title {
+                  .bold-title {
+                        font-size: 3rem;
+                        font-weight: bold;
+                  }
+            }
+      }
+
+      .divider-grad-mask {
+            width: 55%;
+            height: 1rem;
+            background: linear-gradient(0, $primary 0 50%, transparent 0 100%) 0 0 / 1px 5px;
+            mask: linear-gradient(-90deg, black, transparent);
+
+            &:after {
+                  content: "";
+                  position: absolute;
+                  width: 12px;
+                  height: 12px;
+                  background: #000369;
+                  left: 50%;
+                  top: 2px;
+                  transform: rotate(45deg);
+            }
+      }
+
+      .samples {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 210px;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 1400px) {
+                  margin-top: 155px;
+            }
+
+            .tensile-des {
+                  display: inline-block;
+                  position: absolute;
+                  width: 30%;
+                  font-size: 22px;
+                  text-align: justify;
+                  right: 6%;
+                  top: -20%;
+
+                  @media screen and (max-width: 1400px) {
+                        right: 5%;
+                        top: -16%;
+                        font-size: 19px;
+                  }
+
+                  span {
+                        font-weight: bold;
+                        color: $main;
+                  }
+            }
+            .card {
+                  &:nth-child(2n + 1) {
+                        margin-top: 80px;
+                  }
+                  &:nth-child(2) {
+                        margin-top: 160px;
+                  }
+            }
+      }
+
+      .article-item {
+            padding: 40px 10px;
+            border-bottom: 1px solid #000;
+
+            &__content {
+                  display: flex;
+            }
+
+            &__description {
+                  font-size: 14px;
+                  width: 50%;
+            }
+
+            &__image {
+                  width: 50%;
+            }
+      }
+}

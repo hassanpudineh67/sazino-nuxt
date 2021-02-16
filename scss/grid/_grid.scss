@@ -1,0 +1,18 @@
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+}
+
+.col{    
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@include col-generator("", "");
+@include col-generator($xs, xs);
+@include col-generator($sm, sm);
+@include col-generator($md, md);
+@include col-generator($lg, lg);
+@include col-generator($xl, xl);

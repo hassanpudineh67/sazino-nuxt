@@ -1,0 +1,12 @@
+@import './font-size';
+@import './font-weight';
+//@include font-face(shabnam, "~/statics/fonts/shabnam/Shabnam-FD", $weight: normal);
+@font-face {
+      font-family: shabnam;
+      font-weight: normal;
+      src: url("/static/fonts/shabnam/Shabnam-FD.eot");
+      src: url("/static/fonts/shabnam/Shabnam-FD.eot.eot?#iefix") format("embedded-opentype"), url("/static/fonts/shabnam/Shabnam-FD.woff") format("woff"),
+            url("/static/fonts/shabnam/Shabnam-FD.ttf") format("truetype"), url("/static/fonts/shabnam/Shabnam-FD.woff2") format("woff2");
+}
+//@include font-face(shabnam, "@/statics/fonts/shabnam/Shabnam-Bold-FD", $weight: bold);
+//@include font-face(shabnam, "@/statics/fonts/shabnam/Shabnam-Light-FD", $weight: 300);

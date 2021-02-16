@@ -1,0 +1,68 @@
+.footer {
+      @include flexbox($justifyContent: space-between, $alignItems: center, $direction: column);
+      padding: 10px 30px;
+      width: 100%;
+      background: $primary;
+      color: #ddd;
+
+      .fast-access {
+            @include flexbox($direction: column, $alignItems: center);
+            width: 27%;
+            font-size: 95%;
+
+            img {
+                  width: 40%;
+                  padding: 15px 0;
+            }
+            .internal-links {
+                  @include flexbox($justifyContent: space-between, $alignItems: center);
+
+                  li {
+                        cursor: pointer;
+                        span {
+                              color: $main;
+                        }
+                  }
+            }
+
+            .copyright {
+                  //color: $main;
+            }
+      }
+
+      .sazino-info,
+      .about-sazino,
+      .fast-access {
+            flex: 1 1 0px;
+      }
+
+      .sazino-info {
+            img {
+                  width: 25px;
+            }
+      }
+
+      .copy-right {
+            width: 40%;
+            padding: 10px 0 0;
+            border-top: 1px solid #c1c1c1;
+      }
+      //.VueCarousel-slide {
+      //      height: 350px;
+      //      text-align: center;
+      //}
+
+      //.VueCarousel-slide .img-container {
+      //      height: 130px;
+      //      width: 100%;
+      //      float: left;
+      //}
+
+      //.VueCarousel-slide img {
+      //      margin: 0 auto;
+      //}
+
+      //.VueCarousel-slide h3 {
+      //      height: 180px;
+      //}
+}
